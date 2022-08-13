@@ -1,0 +1,36 @@
+.weather-output {
+   color: black;
+   max-width: 350px;
+    width: 100%;
+}
+
+/* 
+========================
+table
+========================
+*/
+.generated-table{
+   width: 100%;
+   /* background-color: #ffeb3b; */
+   border-collapse: collapse;
+   border-width: 0px;
+   border-color: #757575;
+   border-style: solid;
+   /* color: #000000; */
+   color: #2da7d2;
+ }
+ 
+ table.GeneratedTable td, table.GeneratedTable th {
+   border-width: 0px;
+   border-color: #757575;
+   border-style: solid;
+   padding: 3px;
+ }
+ 
+ table.GeneratedTable thead {
+   background-color: #eeff00;
+ }
+
+ .header {
+   width: 100%;
+ }

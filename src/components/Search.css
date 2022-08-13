@@ -1,0 +1,128 @@
+/* 
+========================
+button styles
+========================
+*/
+
+/* Bounce To Right */
+.hvr-bounce-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  color: white;
+  font-size: large;
+  transition-duration: 0.5s;
+  display: flex;
+  align-items: center;
+  border: 0px solid !important;
+  border-radius: 0px;
+  padding: 5px 15px;
+  height: 40px;
+  margin: 0;
+  cursor: pointer;
+  background-color: deeppink;
+}
+
+.hvr-bounce-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #e91e63;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-bounce-to-right:hover,
+.hvr-bounce-to-right:focus,
+.hvr-bounce-to-right:active {
+  color: white;
+
+}
+
+.hvr-bounce-to-right:hover:before,
+.hvr-bounce-to-right:focus:before,
+.hvr-bounce-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  border-radius: 0px;
+}
+
+.hvr-bounce-to-right:focus,
+.hvr-bounce-to-right:active {
+  color: white;
+  box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+/* 
+ ========================
+ input block
+ ========================
+ */
+.inputs {
+  padding: 10px 20px;
+  width: 100%;
+  margin: 10px 10px;
+  font-size: 14px;
+  font-family: monospace;
+  border-radius: 5px;
+  border-color: #262626;
+  color: deeppink;
+  border: 0px solid gray;
+  box-shadow: inset 0 1px 4px #e91e63;
+}
+
+input:focus-visible {
+  outline: auto;
+}
+
+#inputField {
+  justify-content: center;
+  border-bottom: 0px;
+  max-width: 421px;
+  display: flex;
+  flex-direction: row;
+  /* background-color: #fff9c4; */
+  background-image: url('../nav-bg.gif');
+  margin: 10px auto;
+  box-shadow: 0 5px 2px #00000029;
+  border-radius: 4px;
+  padding: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#inputField:hover {
+  box-shadow: 0 5px 2px #00000029;
+}
+
+.weather-heading {
+  transition: .2s;
+}
+
+#inputField:hover .weather-heading {
+  color: #FFFFFF;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #2da7d2, 0 0 30px #2da7d2, 0 0 40px #2da7d2, 0 0 55px #2da7d2, 0 0 75px #2da7d2;
+  transition: .2s;
+}
