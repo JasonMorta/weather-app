@@ -1,0 +1,7 @@
+{
+ "name": "joweather",
+ "integrations": {
+   "capacitor": {}
+ },
+ "type": "react"
+}
